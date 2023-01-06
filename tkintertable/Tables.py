@@ -1654,8 +1654,8 @@ class TableCanvas(Canvas):
         self.cellentry.bind('<Return>', callback)
         self.cellentry.bind('<KeyRelease>', callback)
         self.cellentry.focus_set()
-        self.entrywin=self.create_window(x1+self.inset,y1+self.inset,
-                                width=w-self.inset*2,height=h-self.inset*2,
+        self.entrywin=self.create_window(x1+self.inset-3,y1+self.inset-3,
+                                width=w-self.inset*2+6,height=h-self.inset*2+6,
                                 window=self.cellentry,anchor='nw',
                                 tag='entry')
 
